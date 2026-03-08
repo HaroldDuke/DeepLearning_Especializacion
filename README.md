@@ -26,3 +26,22 @@ Conceptualización sobre deep learning
 
 ![DeepLearning](https://github.com/user-attachments/assets/e8d1c274-45de-4309-989c-e3e42e300f75)
 
+
+# Week1
+
+## 🎯 Objetivo
+Consolidar las bases del aprendizaje profundo mediante la implementación de una neurona básica (perceptrón) para comprender la toma de decisiones por umbral.
+
+## 🛠️ Implementación
+Se desarrolló un modelo en Python que realiza los siguientes procesos:
+1. **Cálculo del puntaje $z$**: Suma ponderada de entradas y pesos más el sesgo ($z = \sum x_i w_i + b$).
+2. **Función de Activación**: Regla de umbral (Step Function) para clasificar la salida en 0 o 1.
+
+## 🧪 Pruebas Realizadas
+Se configuraron casos controlados con diferentes combinaciones de entradas binarias y ajustes en el **Bias** para observar cómo cambia el comportamiento de la neurona (comportamiento tipo compuerta OR/AND).
+
+## 📈 Resultado Principal
+Se identificó que el **bias ($b$)** actúa como el umbral de exigencia de la neurona: un bias más negativo requiere entradas más fuertes para generar una activación (1).
+
+## 🚀 Cómo ejecutar
+1. Abrir el archivo `main.py` y ejecutar desde consola con python main.py.
