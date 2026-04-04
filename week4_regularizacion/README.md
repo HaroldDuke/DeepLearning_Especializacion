@@ -1,6 +1,6 @@
 # Regularización en Redes Neuronales
 
-## 🎯 Objetivo
+## Objetivo
 
 El objetivo de esta actividad fue aplicar técnicas de regularización en una red neuronal con el fin de reducir el sobreajuste (overfitting) y mejorar la capacidad de generalización del modelo. Para ello, se realizó una comparación entre un modelo sin regularización y otro que incorpora técnicas como Dropout y regularización L2, evaluando su desempeño mediante métricas como loss y accuracy.
 
@@ -29,9 +29,9 @@ La actividad se desarrolló utilizando un entorno de notebooks en Google Colab y
 
 ---
 
-## 📈 Resultados
+##  Resultados
 
-### 🔹 Modelo sin regularización
+###  Modelo sin regularización
 
 - Train Loss: 0.0155  
 - Train Accuracy: 0.9951  
@@ -40,7 +40,7 @@ La actividad se desarrolló utilizando un entorno de notebooks en Google Colab y
 - Diferencia Loss: 0.0675  
 - Diferencia Accuracy: 0.0174  
 
-### 🔹 Modelo con regularización
+###  Modelo con regularización
 
 - Train Loss: 0.2886  
 - Train Accuracy: 0.9412  
