@@ -41,21 +41,41 @@ El objetivo principal es **aplicar técnicas de optimización** y comparar cómo
 | Adam (lr=0.01)  | 1.00     | 0.0841       |
 | Adam (lr=0.001) | 0.75     | 0.5794       |
 
+**Análisis
 - El **loss** muestra cómo el error disminuye con el tiempo, evidenciando la convergencia del modelo.  
 - El **accuracy** final indica qué tan bien aprendió la red la tabla de verdad de la compuerta AND.  
 - Configuraciones con **Adam** suelen ser más estables y rápidas en alcanzar precisión perfecta.  
 - Configuraciones con **SGD** dependen fuertemente de la tasa de aprendizaje:  
   - Con `lr=0.1` puede converger rápido.  
   - Con `lr=0.01` converge más lento y puede quedarse en valores intermedios.  
+- Adam (lr=0.01) obtuvo el mejor desempeño, con menor error y convergencia más rápida.
+- SGD (lr=0.1) logró aprender correctamente, pero con mayor error final.
+- Configuraciones con lr bajo (0.01 y 0.001) mostraron aprendizaje incompleto (accuracy = 0.75).
+- El loss permitió observar mejor la calidad del entrenamiento que el accuracy.
 
-##  Conclusiones
+**Justificación
+Se seleccionaron SGD y Adam porque:
+SGD permite observar el impacto directo de la tasa de aprendizaje
+Adam ajusta automáticamente los parámetros, mejorando estabilidad
+Adam es más adecuado en este caso porque:
+Converge más rápido
+Reduce mejor el error
+Requiere menos ajuste manual
+
+**Impacto de la Optimización
+Mejora significativa en la convergencia del modelo
+Reducción del error final (loss)
+Diferencias claras entre configuraciones
+Evidencia de que la tasa de aprendizaje es crítica
+
+** Conclusiones
 - La red neuronal es capaz de aprender la lógica de la compuerta AND con distintas configuraciones de optimización.  
 - El **optimizador Adam** mostró mejor desempeño en términos de estabilidad y rapidez de convergencia.  
 - El **SGD** requiere un ajuste cuidadoso de la tasa de aprendizaje para evitar que el modelo se quede en un error alto o oscile demasiado.  
 - Graficar el **loss** es más informativo que graficar el accuracy en datasets pequeños, ya que el accuracy toma valores discretos y puede verse “digital”.  
 - Este experimento demuestra la importancia de los hiperparámetros en el entrenamiento de redes neuronales, incluso en problemas simples.  
 
-## Discusión
+** Discusión
 Los resultados obtenidos muestran que el rendimiento del modelo depende significativamente tanto del optimizador como de la tasa de aprendizaje. Aunque todas las configuraciones permiten cierto nivel de aprendizaje, solo algunas logran una convergencia completa.
 
 Se observa que Adam con una tasa de aprendizaje de 0.01 logra el mejor equilibrio entre velocidad y precisión, alcanzando un error mínimo y una clasificación perfecta. Esto se debe a su capacidad de ajustar dinámicamente las actualizaciones de los pesos, lo que mejora la estabilidad del entrenamiento.
