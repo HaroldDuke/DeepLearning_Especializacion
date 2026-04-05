@@ -65,13 +65,17 @@ Converge más rápido
 Reduce mejor el error
 Requiere menos ajuste manual
 
+
 **Impacto de la Optimización
 
 Mejora significativa en la convergencia del modelo
+
 Reducción del error final (loss)
+
 Diferencias claras entre configuraciones
+
 Evidencia de que la tasa de aprendizaje es crítica
----
+
 ** Discusión
 
 Los resultados obtenidos muestran que el rendimiento del modelo depende significativamente tanto del optimizador como de la tasa de aprendizaje. Aunque todas las configuraciones permiten cierto nivel de aprendizaje, solo algunas logran una convergencia completa.
