@@ -63,6 +63,7 @@ Converge más rápido
 Reduce mejor el error
 Requiere menos ajuste manual
 
+
 **Impacto de la Optimización
 
 Mejora significativa en la convergencia del modelo
