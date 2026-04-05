@@ -64,12 +64,14 @@ Reduce mejor el error
 Requiere menos ajuste manual
 
 **Impacto de la Optimización
+
 Mejora significativa en la convergencia del modelo
 Reducción del error final (loss)
 Diferencias claras entre configuraciones
 Evidencia de que la tasa de aprendizaje es crítica
 
 ** Conclusiones
+
 - La red neuronal es capaz de aprender la lógica de la compuerta AND con distintas configuraciones de optimización.  
 - El **optimizador Adam** mostró mejor desempeño en términos de estabilidad y rapidez de convergencia.  
 - El **SGD** requiere un ajuste cuidadoso de la tasa de aprendizaje para evitar que el modelo se quede en un error alto o oscile demasiado.  
@@ -77,6 +79,7 @@ Evidencia de que la tasa de aprendizaje es crítica
 - Este experimento demuestra la importancia de los hiperparámetros en el entrenamiento de redes neuronales, incluso en problemas simples.  
 
 ** Discusión
+
 Los resultados obtenidos muestran que el rendimiento del modelo depende significativamente tanto del optimizador como de la tasa de aprendizaje. Aunque todas las configuraciones permiten cierto nivel de aprendizaje, solo algunas logran una convergencia completa.
 
 Se observa que Adam con una tasa de aprendizaje de 0.01 logra el mejor equilibrio entre velocidad y precisión, alcanzando un error mínimo y una clasificación perfecta. Esto se debe a su capacidad de ajustar dinámicamente las actualizaciones de los pesos, lo que mejora la estabilidad del entrenamiento.
