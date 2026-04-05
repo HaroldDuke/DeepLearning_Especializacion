@@ -34,21 +34,21 @@ La actividad se desarrolló utilizando un entorno de notebooks en Google Colab y
 
 ###  Modelo sin regularización
 
-- Train Loss: 0.0155  
+- Train Loss: 0.0177  
 - Train Accuracy: 0.9944  
-- Validation Loss: 0.0829  
-- Validation Accuracy: 0.9777  
-- Diferencia Loss: 0.0675  
-- Diferencia Accuracy: 0.0174  
+- Validation Loss: 0.0969  
+- Validation Accuracy: 0.9760  
+- Diferencia Loss: 0.0792  
+- Diferencia Accuracy: 0.0184  
 
 ###  Modelo con regularización
 
-- Train Loss: 0.2886  
-- Train Accuracy: 0.9412  
-- Validation Loss: 0.2032  
-- Validation Accuracy: 0.9695  
-- Diferencia Loss: 0.0854  
-- Diferencia Accuracy: 0.0283  
+- Train Loss: 0.2907  
+- Train Accuracy: 0.9411  
+- Validation Loss: 0.2039  
+- Validation Accuracy: 0.9683  
+- Diferencia Loss: 0.0868  
+- Diferencia Accuracy: 0.0272  
 
 ---
 ## Justificación de las Técnicas
@@ -86,7 +86,7 @@ Menor dependencia de los datos de entrenamiento
 
 Los resultados muestran que el modelo sin regularización alcanza una alta precisión en entrenamiento (0.9944), pero presenta una diferencia con los datos de validación, lo que indica sobreajuste.
 
-En contraste, el modelo con regularización reduce su precisión en entrenamiento (0.9412), pero mantiene un desempeño similar en validación (0.9695), lo que demuestra una mejor capacidad de generalización.
+En contraste, el modelo con regularización reduce su precisión en entrenamiento (0.9411), pero mantiene un desempeño similar en validación (0.9683), lo que demuestra una mejor capacidad de generalización.
 
 El aumento en el loss en el modelo regularizado es esperado, ya que las técnicas aplicadas penalizan la complejidad del modelo. Esto obliga a la red neuronal a aprender patrones más generales en lugar de memorizar los datos.
 
