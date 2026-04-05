@@ -1,3 +1,4 @@
+Semana 4 – Actividad 3: Aplicación de Técnicas de Optimización en una Red Neuronal en Google Colab
 # Experimento de Optimización en Redes Neuronales (Compuerta AND)
 
 ##  Descripción General
