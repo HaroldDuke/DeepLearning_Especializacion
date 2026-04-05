@@ -77,10 +77,14 @@ La diferencia entre métricas de entrenamiento y validación en ambos modelos pe
 
 ---
  ## Impacto de la Regularización
--Disminución del sobreajuste
--Reducción de la diferencia entre entrenamiento y validación
--Modelo más robusto
--Menor dependencia de los datos de entrenamiento
+ 
+Disminución del sobreajuste
+
+Reducción de la diferencia entre entrenamiento y validación
+
+Modelo más robusto
+
+Menor dependencia de los datos de entrenamiento
 
 ## Discusión
 
