@@ -54,7 +54,6 @@ El objetivo principal es **aplicar técnicas de optimización** y comparar cómo
 - SGD (lr=0.1) logró aprender correctamente, pero con mayor error final.
 - Configuraciones con lr bajo (0.01 y 0.001) mostraron aprendizaje incompleto (accuracy = 0.75).
 - El loss permitió observar mejor la calidad del entrenamiento que el accuracy.
----
 
 **Justificación
 
@@ -65,7 +64,6 @@ Adam es más adecuado en este caso porque:
 Converge más rápido
 Reduce mejor el error
 Requiere menos ajuste manual
----
 
 **Impacto de la Optimización
 
