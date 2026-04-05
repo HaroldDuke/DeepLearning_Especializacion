@@ -86,7 +86,7 @@ Menor dependencia de los datos de entrenamiento
 
 Los resultados muestran que el modelo sin regularización alcanza una alta precisión en entrenamiento (0.9951), pero presenta una diferencia con los datos de validación, lo que indica sobreajuste.
 
-En contraste, el modelo con regularización reduce su precisión en entrenamiento (0.9412), pero mantiene un desempeño similar en validación (0.9683), lo que demuestra una mejor capacidad de generalización.
+En contraste, el modelo con regularización reduce su precisión en entrenamiento (0.9412), pero mantiene un desempeño similar en validación (0.9695), lo que demuestra una mejor capacidad de generalización.
 
 El aumento en el loss en el modelo regularizado es esperado, ya que las técnicas aplicadas penalizan la complejidad del modelo. Esto obliga a la red neuronal a aprender patrones más generales en lugar de memorizar los datos.
 
