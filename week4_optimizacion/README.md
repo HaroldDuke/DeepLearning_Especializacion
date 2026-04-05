@@ -33,6 +33,14 @@ El objetivo principal es **aplicar técnicas de optimización** y comparar cómo
    - Se imprime en consola el **loss final** y el **accuracy final** para cada configuración.  
 
 ## 📊 Resultados
+
+| Configuración   | Accuracy | Error (Loss) |
+| --------------- | -------- | ------------ |
+| SGD (lr=0.1)    | 1.00     | 0.2561       |
+| SGD (lr=0.01)   | 0.75     | 0.5346       |
+| Adam (lr=0.01)  | 1.00     | 0.0841       |
+| Adam (lr=0.001) | 0.75     | 0.5794       |
+
 - El **loss** muestra cómo el error disminuye con el tiempo, evidenciando la convergencia del modelo.  
 - El **accuracy** final indica qué tan bien aprendió la red la tabla de verdad de la compuerta AND.  
 - Configuraciones con **Adam** suelen ser más estables y rápidas en alcanzar precisión perfecta.  
@@ -46,3 +54,14 @@ El objetivo principal es **aplicar técnicas de optimización** y comparar cómo
 - El **SGD** requiere un ajuste cuidadoso de la tasa de aprendizaje para evitar que el modelo se quede en un error alto o oscile demasiado.  
 - Graficar el **loss** es más informativo que graficar el accuracy en datasets pequeños, ya que el accuracy toma valores discretos y puede verse “digital”.  
 - Este experimento demuestra la importancia de los hiperparámetros en el entrenamiento de redes neuronales, incluso en problemas simples.  
+
+## Discusión
+Los resultados obtenidos muestran que el rendimiento del modelo depende significativamente tanto del optimizador como de la tasa de aprendizaje. Aunque todas las configuraciones permiten cierto nivel de aprendizaje, solo algunas logran una convergencia completa.
+
+Se observa que Adam con una tasa de aprendizaje de 0.01 logra el mejor equilibrio entre velocidad y precisión, alcanzando un error mínimo y una clasificación perfecta. Esto se debe a su capacidad de ajustar dinámicamente las actualizaciones de los pesos, lo que mejora la estabilidad del entrenamiento.
+
+Por otro lado, SGD presenta mayor sensibilidad a la tasa de aprendizaje. Con un valor alto (0.1), el modelo logra converger, pero con mayor error residual, lo que sugiere que las actualizaciones pueden ser menos precisas. En contraste, con una tasa más baja (0.01), el aprendizaje es insuficiente, lo que evidencia un problema de convergencia lenta.
+
+Además, se evidencia que el accuracy no es suficiente para evaluar completamente el modelo, ya que configuraciones con el mismo accuracy presentan diferencias importantes en el loss. Esto resalta la importancia de analizar múltiples métricas.
+
+En conjunto, estos resultados confirman que la elección del optimizador y sus hiperparámetros es un factor crítico en el entrenamiento de redes neuronales, incluso en problemas simples.
