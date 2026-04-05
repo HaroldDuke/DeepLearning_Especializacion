@@ -54,6 +54,7 @@ El objetivo principal es **aplicar técnicas de optimización** y comparar cómo
 - El loss permitió observar mejor la calidad del entrenamiento que el accuracy.
 
 **Justificación
+
 Se seleccionaron SGD y Adam porque:
 SGD permite observar el impacto directo de la tasa de aprendizaje
 Adam ajusta automáticamente los parámetros, mejorando estabilidad
