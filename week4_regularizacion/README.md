@@ -32,12 +32,6 @@ La actividad se desarrolló utilizando un entorno de notebooks en Google Colab y
 
 ##  Resultados
 
-| Modelo             | Train Acc | Val Acc | Train Loss | Val Loss |
-| ------------------ | --------- | ------- | ---------- | -------- |
-| Sin regularización | 0.9951    | 0.9760  | 0.0177     | 0.0969   |
-| Con regularización | 0.9411    | 0.9683  | 0.2907     | 0.2039   |
-
-
 ###  Modelo sin regularización
 
 - Train Loss: 0.0155  
@@ -82,6 +76,21 @@ Por otro lado, el modelo con regularización muestra un desempeño más conserva
 La diferencia entre métricas de entrenamiento y validación en ambos modelos permite analizar el nivel de generalización. Aunque en este caso el modelo sin regularización no presenta un sobreajuste extremo, sí se evidencia una tendencia mayor en comparación con el modelo regularizado.
 
 ---
+ ## Impacto de la Regularización
+Disminución del sobreajuste
+Reducción de la diferencia entre entrenamiento y validación
+Modelo más robusto
+Menor dependencia de los datos de entrenamiento
+
+## Discusión
+
+Los resultados muestran que el modelo sin regularización alcanza una alta precisión en entrenamiento (0.9944), pero presenta una diferencia con los datos de validación, lo que indica sobreajuste.
+
+En contraste, el modelo con regularización reduce su precisión en entrenamiento (0.9411), pero mantiene un desempeño similar en validación (0.9683), lo que demuestra una mejor capacidad de generalización.
+
+El aumento en el loss en el modelo regularizado es esperado, ya que las técnicas aplicadas penalizan la complejidad del modelo. Esto obliga a la red neuronal a aprender patrones más generales en lugar de memorizar los datos.
+
+En conjunto, los resultados evidencian que la regularización mejora la calidad del modelo al hacerlo más robusto frente a nuevos datos.
 
 ## Conclusiones
 
