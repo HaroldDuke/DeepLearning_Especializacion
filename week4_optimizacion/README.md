@@ -70,14 +70,6 @@ Reducción del error final (loss)
 Diferencias claras entre configuraciones
 Evidencia de que la tasa de aprendizaje es crítica
 
-** Conclusiones
-
-- La red neuronal es capaz de aprender la lógica de la compuerta AND con distintas configuraciones de optimización.  
-- El **optimizador Adam** mostró mejor desempeño en términos de estabilidad y rapidez de convergencia.  
-- El **SGD** requiere un ajuste cuidadoso de la tasa de aprendizaje para evitar que el modelo se quede en un error alto o oscile demasiado.  
-- Graficar el **loss** es más informativo que graficar el accuracy en datasets pequeños, ya que el accuracy toma valores discretos y puede verse “digital”.  
-- Este experimento demuestra la importancia de los hiperparámetros en el entrenamiento de redes neuronales, incluso en problemas simples.  
-
 ** Discusión
 
 Los resultados obtenidos muestran que el rendimiento del modelo depende significativamente tanto del optimizador como de la tasa de aprendizaje. Aunque todas las configuraciones permiten cierto nivel de aprendizaje, solo algunas logran una convergencia completa.
@@ -89,3 +81,13 @@ Por otro lado, SGD presenta mayor sensibilidad a la tasa de aprendizaje. Con un 
 Además, se evidencia que el accuracy no es suficiente para evaluar completamente el modelo, ya que configuraciones con el mismo accuracy presentan diferencias importantes en el loss. Esto resalta la importancia de analizar múltiples métricas.
 
 En conjunto, estos resultados confirman que la elección del optimizador y sus hiperparámetros es un factor crítico en el entrenamiento de redes neuronales, incluso en problemas simples.
+
+** Conclusiones
+
+- La red neuronal es capaz de aprender la lógica de la compuerta AND con distintas configuraciones de optimización.  
+- El **optimizador Adam** mostró mejor desempeño en términos de estabilidad y rapidez de convergencia.  
+- El **SGD** requiere un ajuste cuidadoso de la tasa de aprendizaje para evitar que el modelo se quede en un error alto o oscile demasiado.  
+- Graficar el **loss** es más informativo que graficar el accuracy en datasets pequeños, ya que el accuracy toma valores discretos y puede verse “digital”.  
+- Este experimento demuestra la importancia de los hiperparámetros en el entrenamiento de redes neuronales, incluso en problemas simples.  
+
+
