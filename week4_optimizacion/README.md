@@ -55,6 +55,7 @@ El objetivo principal es **aplicar técnicas de optimización** y comparar cómo
 - Configuraciones con lr bajo (0.01 y 0.001) mostraron aprendizaje incompleto (accuracy = 0.75).
 - El loss permitió observar mejor la calidad del entrenamiento que el accuracy.
 ---
+
 **Justificación
 
 Se seleccionaron SGD y Adam porque:
