@@ -1,3 +1,4 @@
+Semana 4 – Actividad 4: Aplicación de Métodos de Regularización en una Red Neuronal
 # Regularización en Redes Neuronales
 
 ## Objetivo
