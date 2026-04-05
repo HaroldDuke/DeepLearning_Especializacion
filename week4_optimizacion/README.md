@@ -55,7 +55,7 @@ El objetivo principal es **aplicar técnicas de optimización** y comparar cómo
 - Configuraciones con lr bajo (0.01 y 0.001) mostraron aprendizaje incompleto (accuracy = 0.75).
 - El loss permitió observar mejor la calidad del entrenamiento que el accuracy.
 
-**Justificación
+** Justificación
 
 Se seleccionaron SGD y Adam porque:
 SGD permite observar el impacto directo de la tasa de aprendizaje
@@ -66,7 +66,7 @@ Reduce mejor el error
 Requiere menos ajuste manual
 
 
-**Impacto de la Optimización
+** Impacto de la Optimización
 
 Mejora significativa en la convergencia del modelo
 
@@ -76,6 +76,7 @@ Diferencias claras entre configuraciones
 
 Evidencia de que la tasa de aprendizaje es crítica
 
+---
 ** Discusión
 
 Los resultados obtenidos muestran que el rendimiento del modelo depende significativamente tanto del optimizador como de la tasa de aprendizaje. Aunque todas las configuraciones permiten cierto nivel de aprendizaje, solo algunas logran una convergencia completa.
