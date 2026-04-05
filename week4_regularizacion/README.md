@@ -35,7 +35,7 @@ La actividad se desarrolló utilizando un entorno de notebooks en Google Colab y
 ###  Modelo sin regularización
 
 - Train Loss: 0.0155  
-- Train Accuracy: 0.9951  
+- Train Accuracy: 0.9944  
 - Validation Loss: 0.0829  
 - Validation Accuracy: 0.9777  
 - Diferencia Loss: 0.0675  
@@ -84,7 +84,7 @@ Menor dependencia de los datos de entrenamiento
 
 ## Discusión
 
-Los resultados muestran que el modelo sin regularización alcanza una alta precisión en entrenamiento (0.9951), pero presenta una diferencia con los datos de validación, lo que indica sobreajuste.
+Los resultados muestran que el modelo sin regularización alcanza una alta precisión en entrenamiento (0.9944), pero presenta una diferencia con los datos de validación, lo que indica sobreajuste.
 
 En contraste, el modelo con regularización reduce su precisión en entrenamiento (0.9412), pero mantiene un desempeño similar en validación (0.9695), lo que demuestra una mejor capacidad de generalización.
 
