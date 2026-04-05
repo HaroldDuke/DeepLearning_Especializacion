@@ -32,6 +32,12 @@ La actividad se desarrolló utilizando un entorno de notebooks en Google Colab y
 
 ##  Resultados
 
+| Modelo             | Train Acc | Val Acc | Train Loss | Val Loss |
+| ------------------ | --------- | ------- | ---------- | -------- |
+| Sin regularización | 0.9951    | 0.9760  | 0.0177     | 0.0969   |
+| Con regularización | 0.9411    | 0.9683  | 0.2907     | 0.2039   |
+
+
 ###  Modelo sin regularización
 
 - Train Loss: 0.0155  
@@ -51,6 +57,19 @@ La actividad se desarrolló utilizando un entorno de notebooks en Google Colab y
 - Diferencia Accuracy: 0.0283  
 
 ---
+## Justificación de las Técnicas
+
+Las técnicas seleccionadas son ampliamente utilizadas para mejorar la generalización:
+
+Dropout:
+Reduce la co-adaptación de neuronas y mejora la robustez del modelo.
+L2 (Weight Decay):
+Controla el crecimiento de los pesos, evitando modelos demasiado complejos.
+
+Estas técnicas son adecuadas porque:
+
+El dataset es pequeño (propenso a overfitting)
+Se busca observar el efecto de simplificar el modelo
 
 ## Análisis de Resultados
 
