@@ -1,3 +1,57 @@
+# 📘 Clasificación de Imágenes con Data Augmentation y Transfer Learning
+
+---
+
+# 📖 Introducción
+
+En esta actividad se exploran dos técnicas clave para mejorar el desempeño de modelos de clasificación de imágenes: **Data Augmentation** y **Transfer Learning**.  
+El Data Augmentation permite aumentar artificialmente la cantidad de datos mediante transformaciones sobre las imágenes originales, mientras que el Transfer Learning permite reutilizar modelos previamente entrenados en grandes conjuntos de datos, adaptándolos a nuevos problemas.
+
+El objetivo principal es comparar el desempeño de diferentes enfoques (modelo base, modelo con Data Augmentation y modelo con Transfer Learning), analizando su impacto en métricas como accuracy y loss, así como su capacidad de generalización.
+
+---
+
+# 🧪 Metodología
+
+## 1. Selección del dataset
+Se utilizó un conjunto de datos de imágenes (por ejemplo, Fashion MNIST), el cual contiene diferentes categorías para la clasificación.
+
+## 2. Preparación de los datos
+- Normalización de los valores de los píxeles.
+- Redimensionamiento de las imágenes según los requerimientos del modelo.
+- División del dataset en conjuntos de entrenamiento y prueba.
+
+## 3. Implementación del modelo base
+Se construyó un modelo de red neuronal convolucional (CNN) simple, el cual fue entrenado utilizando únicamente los datos originales, sin aplicar técnicas adicionales.
+
+## 4. Aplicación de Data Augmentation
+Se implementaron transformaciones sobre las imágenes de entrenamiento, tales como:
+- Rotación
+- Escalamiento (zoom)
+- Volteo horizontal
+
+Posteriormente, se entrenó el modelo utilizando estas nuevas variaciones para evaluar su impacto en el desempeño.
+
+## 5. Implementación de Transfer Learning
+Se utilizó un modelo preentrenado (como MobileNetV2), eliminando su capa final y adaptándolo al problema de clasificación específico.  
+Se congelaron las capas base para aprovechar las características previamente aprendidas y se entrenaron únicamente las capas finales.
+
+## 6. Evaluación de modelos
+Se evaluaron los tres enfoques (modelo base, Data Augmentation y Transfer Learning) utilizando métricas como:
+- Accuracy
+- Loss
+
+## 7. Comparación de resultados
+Se realizó un análisis comparativo del desempeño de los modelos, identificando diferencias en:
+- Precisión
+- Capacidad de generalización
+- Tiempo de entrenamiento
+
+## 8. Análisis y conclusiones
+Finalmente, se analizaron los resultados obtenidos para determinar las ventajas, limitaciones y casos de uso de cada técnica.
+
+---
+
 # 📊 Análisis Técnico
 
 ## 🔍 Comparación de Modelos
