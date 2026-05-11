@@ -7,15 +7,23 @@ Este proyecto implementa un modelo de aprendizaje profundo basado en un mecanism
 El código sigue un flujo ordenado de trabajo que inicia con la importación de librerías, continúa con la carga y preparación de datos, luego define la arquitectura del modelo, realiza el entrenamiento, evalúa resultados y finalmente incorpora visualizaciones y una comparación con LSTM .
 
 ## Proyecto
-├── Importación de librerías
-├── Carga y preprocesamiento de datos
-├── Construcción de secuencias
-├── Implementación del mecanismo de atención
-├── Definición del Transformer simplificado
-├── Entrenamiento del modelo
-├── Evaluación con métricas
-├── Visualización de pesos de atención
-└── Comparación con LSTM
+─ Importación de librerías
+
+─ Carga y preprocesamiento de datos
+
+─ Construcción de secuencias
+
+─ Implementación del mecanismo de atención
+
+─ Definición del Transformer simplificado
+
+─ Entrenamiento del modelo
+
+─ Evaluación con métricas
+
+─ Visualización de pesos de atención
+
+─ Comparación con LSTM
 
 ## DATOS
 El código utiliza una serie de tiempo univariada con datos mensuales de pasajeros de aerolínea entre 1949 y 1960, con un total de 144 observaciones. Esta serie presenta tendencia creciente y estacionalidad anual, por lo que resulta adecuada para probar modelos capaces de capturar dependencias temporales.
