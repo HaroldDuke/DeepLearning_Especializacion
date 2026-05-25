@@ -194,4 +194,13 @@ Durante la ejecución se registraron dos runs principales en **Weights & Biases*
 El pipeline logró un desempeño sobresaliente en MNIST, alcanzando **más del 99.5% de accuracy en test** y exportando el modelo en formatos **TorchScript** y **ONNX**.  
 Los resultados fueron trazados y versionados en W&B, incluyendo métricas, artefactos y simulaciones de latencia de inferencia, lo que demuestra un flujo completo de **ciclo de vida de datos y modelo en Deep Learning**.
 <img width="1825" height="930" alt="huu" src="https://github.com/user-attachments/assets/8f9ca51f-6b77-407b-9bd9-7148568ad604" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/17604c56-6c0e-44aa-b159-bf751420f9e0" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/17d042e1-6808-4e0a-a6b3-838c87719ce2" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7d3c613e-7767-4b27-aa4f-0fdbdfe498f1" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5210ae6c-c52b-4d97-8b8e-4c3e205c147d" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/03022ff3-8b35-4edf-a1bc-f52e1ade5f1c" />
+
+
+
+
 
