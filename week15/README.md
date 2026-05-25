@@ -158,3 +158,40 @@ Ver [`05_presentacion/link_wandb_publico.md`](05_presentacion/link_wandb_publico
 - Géron, A. (2022). *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow* (3rd ed.).
 - Sculley et al. (2015). *Hidden Technical Debt in Machine Learning Systems*. NeurIPS.
 - Documentación de W&B — https://docs.wandb.ai
+---
+
+## 📈 Resultados de Ejecución
+
+Durante la ejecución se registraron dos runs principales en **Weights & Biases**:
+
+### 🔹 Run `proud-yogurt-1`
+- **Mejor epoch:** 10  
+- **Best Val Accuracy:** 0.9941  
+- **Test Accuracy:** 0.9958  
+- **Parámetros entrenables:** 1,701,578  
+- **Duración por epoch:** ~174.45 s  
+- **Dataset:** Train 51,000 | Val 9,000 | Test 10,000  
+
+📌 Dashboard: [Ver run en W&B](https://wandb.ai/mcordobafigueroa-universidad-de-cundinamarca/ciclo-vida-deep-learning/runs/lvmr8rez)
+
+---
+
+### 🔹 Run `happy-lion-2`
+- **Mejor epoch:** 10  
+- **Best Val Accuracy:** 0.9941  
+- **Test Accuracy:** 0.9958  
+- **Parámetros entrenables:** 1,701,578  
+- **Duración por epoch:** ~178.80 s  
+- **Latencia de inferencia (serving):** ~2.18 ms (p50)  
+- **Dataset:** Train 51,000 | Val 9,000 | Test 10,000  
+
+📌 Dashboard: [Ver run en W&B](https://wandb.ai/mcordobafigueroa-universidad-de-cundinamarca/ciclo-vida-deep-learning/runs/ompqswiq)
+
+---
+
+## 📝 Conclusión Final
+
+El pipeline logró un desempeño sobresaliente en MNIST, alcanzando **más del 99.5% de accuracy en test** y exportando el modelo en formatos **TorchScript** y **ONNX**.  
+Los resultados fueron trazados y versionados en W&B, incluyendo métricas, artefactos y simulaciones de latencia de inferencia, lo que demuestra un flujo completo de **ciclo de vida de datos y modelo en Deep Learning**.
+<img width="1825" height="930" alt="huu" src="https://github.com/user-attachments/assets/8f9ca51f-6b77-407b-9bd9-7148568ad604" />
+
